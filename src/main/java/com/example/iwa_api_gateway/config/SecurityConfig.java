@@ -20,7 +20,7 @@ public class SecurityConfig {
                 .pathMatchers("/notifications/**").permitAll()
                 .pathMatchers("/commentaires/**").permitAll()
                 .pathMatchers("/support/**").permitAll()
-                .pathMatchers("/user/**").permitAll()
+                .pathMatchers("/users/**").permitAll()
                 .pathMatchers("/auth/**").permitAll()
                 .pathMatchers("/favoris/**").permitAll()
                 .pathMatchers("/flags/**").hasRole("ADMIN") // Exige un rôle spécifique pour les flags
