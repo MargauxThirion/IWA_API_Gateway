@@ -18,7 +18,7 @@ public class SecurityConfig {
                 // Permettre l'accès sans authentification à certaines routes pour les tests
                 .pathMatchers("/locations/**").permitAll()
                 .pathMatchers("/notifications/**").permitAll()
-                .pathMatchers("/commentaires/**").permitAll()
+                .pathMatchers("/comments/**").permitAll()
                 .pathMatchers("/support/**").permitAll()
                 .pathMatchers("/users/**").permitAll()
                 .pathMatchers("/auth/**").permitAll()

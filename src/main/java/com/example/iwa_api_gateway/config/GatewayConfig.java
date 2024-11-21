@@ -20,7 +20,7 @@ public class GatewayConfig {
                 .route("admin-moderation-service", r -> r.path("/flags/**")
                         .uri("http://host.docker.internal:8088"))
 
-                .route("commentaire-service", r -> r.path("/commentaires/**")
+                .route("commentaire-service", r -> r.path("/comments/**")
                         .uri("http://host.docker.internal:8081"))
 
                 .route("user-service", r -> r.path("/users/**")
