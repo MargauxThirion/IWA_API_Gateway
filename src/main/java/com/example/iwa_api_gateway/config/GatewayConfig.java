@@ -33,7 +33,7 @@ public class GatewayConfig {
                         .uri("http://host.docker.internal:8080"))
 
                 .route("support-service", r -> r.path("/support/**")
-                        .uri("http://host.docker.internal:8087"))
+                        .uri("http://host.docker.internal:8082"))
                 .build();
     }
 }
