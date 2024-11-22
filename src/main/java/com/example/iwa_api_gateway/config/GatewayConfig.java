@@ -30,7 +30,7 @@ public class GatewayConfig {
                         .uri("http://host.docker.internal:8088"))
 
                 .route("commentaire-service", r -> r.path("/comments/**")
-                        .uri("http://host.docker.internal:8081"))
+                        .uri("http://host.docker.internal:8084"))
 
                 .route("user-service", r -> r.path("/users/**")
                         .uri("http://host.docker.internal:8080"))

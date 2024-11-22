@@ -23,7 +23,7 @@ public class SecurityConfig {
                 .pathMatchers("/users/**").permitAll()
                 .pathMatchers("/auth/**").permitAll()
                 .pathMatchers("/favoris/**").permitAll()
-                .pathMatchers("/flags/**").hasRole("ADMIN") // Exige un rôle spécifique pour les flags
+                .pathMatchers("/flags/**").permitAll() // Exige un rôle spécifique pour les flags
                 .anyExchange().permitAll();// Tout le reste nécessite une authentification
         return http.build();
     }
