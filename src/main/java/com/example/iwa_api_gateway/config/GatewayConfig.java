@@ -13,6 +13,15 @@ public class GatewayConfig {
         return builder.routes()
                 .route("location-service", r -> r.path("/locations/**")
                         .uri("http://host.docker.internal:8083"))
+        
+                .route("location-service", r -> r.path("/photos/**")
+                        .uri("http://host.docker.internal:8083"))
+                
+                .route("location-service", r -> r.path("/equipments/**")
+                        .uri("http://host.docker.internal:8083"))
+                
+                .route("location-service", r -> r.path("/search/**")
+                        .uri("http://host.docker.internal:8083"))
 
                 .route("notification-service", r -> r.path("/notifications/**")
                         .uri("http://host.docker.internal:8085"))
